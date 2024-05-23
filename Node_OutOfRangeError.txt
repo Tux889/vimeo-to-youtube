@@ -1,0 +1,11 @@
+node:internal/validators:123
+      throw new ERR_OUT_OF_RANGE(name, `>= ${min} && <= ${max}`, value);
+      ^
+
+RangeError [ERR_OUT_OF_RANGE]: The value of "length" is out of range. It must be >= 0 && <= 2147483647. Received 2168553610
+    at Object.write (node:fs:839:5)
+    at writeAll (node:fs:2199:6)
+    at node:fs:2261:7
+    at FSReqCallback.oncomplete (node:fs:189:23) {
+  code: 'ERR_OUT_OF_RANGE'
+}
